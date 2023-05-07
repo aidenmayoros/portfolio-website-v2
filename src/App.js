@@ -1,4 +1,3 @@
-import './App.css';
 import Fullpage from './components/Fullpage';
 import StickyNav from './components/Navbar';
 

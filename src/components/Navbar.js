@@ -5,14 +5,19 @@ import Nav from 'react-bootstrap/Nav';
 
 function StickyNav() {
 	return (
-		<Navbar bg='dark' variant='dark'>
+		<Navbar collapseOnSelect expand='lg'>
 			<Container>
-				<Navbar.Brand href='#home'>Navbar</Navbar.Brand>
-				<Nav className='me-auto'>
-					<Nav.Link href='#home'>Home</Nav.Link>
-					<Nav.Link href='#features'>Features</Nav.Link>
-					<Nav.Link href='#pricing'>Pricing</Nav.Link>
-				</Nav>
+				<Navbar.Brand href='#home'>
+					<img src={`${process.env.PUBLIC_URL}/assets/images/logo-small.png`} className='d-inline-block align-top' alt="Aiden's website logo" />
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
+				<Navbar.Collapse className='justify-content-end'>
+					<Nav>
+						<Nav.Link href='#about'>About</Nav.Link>
+						<Nav.Link href='#work'>Work</Nav.Link>
+						<Nav.Link href='#contact'>Contact</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);

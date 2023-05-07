@@ -1,3 +1,80 @@
+:root {
+	--main-font: 'Titillium Web';
+	--primary-color: #41ead4;
+	--secondary-color: #f71735;
+	--rich-black: #011627;
+	--orange: #ff9f1c;
+	--off-white: #fdfffc;
+	--main-border-radius: 10px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.navbar {
+	background-color: var(--primary-color);
+	background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--rich-black)));
+	background: linear-gradient(to right, var(--primary-color), var(--rich-black));
+	width: 100%;
+}
+
+.nav-link {
+	color: var(--off-white);
+	border-radius: var(--main-border-radius);
+	margin: 1em;
+}
+
+.nav-link:hover {
+	color: var(--off-white);
+	background-color: var(--rich-black);
+	border-radius: var(--main-border-radius);
+}
+
+.nav-link:active {
+	color: var(--secondary-color);
+	background-color: var(--rich-black);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+	color: var(--secondary-color);
+	background-color: var(--rich-black);
+}
+
+.navbar-toggler {
+	background-color: var(--off-white);
+	margin-right: 0.3em;
+}
+
+@media only screen and (max-width: 991px) {
+	.navbar-nav {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.nav-link {
+		margin-right: 0.3em;
+		margin-top: 0.5em;
+		margin-bottom: 0;
+		padding: 1em;
+	}
+}
+
+.container {
+	margin: 0;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 100%;
+}
+
 .App {
 	text-align: center;
 }
