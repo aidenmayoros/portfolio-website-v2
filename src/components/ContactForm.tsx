@@ -10,7 +10,7 @@ function ContactForm() {
 	};
 
 	return (
-		<Box sx={{ maxWidth: '80%' }}>
+		<Box sx={{ maxWidth: '80%', pt: 5, pb: 5 }}>
 			<Typography variant='h5' gutterBottom sx={{ pt: 60, pb: 1 }}>
 				Contact
 			</Typography>
@@ -47,11 +47,7 @@ function ContactForm() {
 							/>
 						</Grid>
 						<Grid item xs={12}>
-							<Button
-								variant='contained'
-								color='primary'
-								fullWidth
-								type='submit'>
+							<Button variant='outlined' color='primary' type='submit'>
 								Send Message
 							</Button>
 						</Grid>

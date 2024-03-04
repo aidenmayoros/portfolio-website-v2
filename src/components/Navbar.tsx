@@ -11,9 +11,24 @@ function Navbar() {
 
 	return (
 		<Box className='navbar' sx={{ display: 'flex', flexDirection: 'column' }}>
-			<Button onClick={() => scrollToSection('about')}>About</Button>
-			<Button onClick={() => scrollToSection('projects')}>Projects</Button>
-			<Button onClick={() => scrollToSection('contact')}>Contact</Button>
+			<Button
+				variant='outlined'
+				onClick={() => scrollToSection('about')}
+				sx={{ mt: 8, width: '150px' }}>
+				About
+			</Button>
+			<Button
+				variant='outlined'
+				onClick={() => scrollToSection('projects')}
+				sx={{ width: '150px', mt: 2 }}>
+				Projects
+			</Button>
+			<Button
+				variant='outlined'
+				onClick={() => scrollToSection('contact')}
+				sx={{ width: '150px', mt: 2 }}>
+				Contact
+			</Button>
 		</Box>
 	);
 }

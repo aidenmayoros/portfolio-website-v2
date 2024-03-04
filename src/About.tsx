@@ -6,11 +6,21 @@ function About() {
 	return (
 		<Element name='about'>
 			<Box sx={{ maxWidth: '80%' }}>
-				<Typography variant='h5'>
-					I'm a web developer with a background in customer service which helps
-					me to make customer centered projects aimed at making simple and easy
-					to use solutions to sometimes complex problems. I am currently
-					available for full time, part time or freelance work.
+				<Typography sx={{ fontSize: '16px' }}>
+					Back in 2019, I found a desire and passion for coding. I really
+					enjoyed being able to solve complex problems and build something
+					others would enjoy.
+				</Typography>
+				<br></br>
+				<Typography sx={{ fontSize: '16px' }}>
+					I first started my programming journey with website development and it
+					was a perfect fit. As a dedicated CareerFoundry graduate with a deep
+					passion for continued learning I love supporting my team members in
+					achieving our shared professional goals.
+				</Typography>
+				<br></br>
+				<Typography sx={{ fontSize: '16px' }}>
+					My focus now is to continuously upgrade my skills and understanding.
 				</Typography>
 			</Box>
 		</Element>

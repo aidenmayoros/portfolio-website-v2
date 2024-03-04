@@ -8,18 +8,20 @@ import Navbar from './Navbar';
 function LeftSide() {
 	return (
 		<Box
+			id='background-image'
 			sx={{
 				height: '100vh',
-				p: 2,
+				pt: 3,
+				pb: 20,
+				pl: 10,
+				pr: 10,
 				display: 'flex',
 				flexDirection: 'column',
-				alignItems: 'center',
+				justifyContent: 'space-between',
 			}}>
-			<Box sx={{ pt: 15 }}>
+			<Box sx={{ pt: 15, color: 'white' }}>
 				<Typography variant='h4'>Aiden Mayoros</Typography>
 				<Typography variant='subtitle1'>Full Stack Web Developer</Typography>
-			</Box>
-			<Box>
 				<Navbar />
 			</Box>
 			<Box sx={{ mt: 'auto' }}>

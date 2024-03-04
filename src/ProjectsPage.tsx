@@ -1,6 +1,6 @@
 import { Button, Box } from '@mui/material';
 
-function Projects() {
+function ProjectsPage() {
 	return (
 		<Box id='projects'>
 			<h1>Projects Page</h1>
@@ -9,4 +9,4 @@ function Projects() {
 	);
 }
 
-export default Projects;
+export default ProjectsPage;

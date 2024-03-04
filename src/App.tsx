@@ -1,14 +1,34 @@
 // App.tsx
-import { Grid } from '@mui/material';
-import RightSide from './components/RightSide';
-import LeftSide from './components/LeftSide';
 import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import ProjectsPage from './ProjectsPage';
 
 const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
+		text: {
+			primary: 'rgb(176, 169, 159)',
+		},
+	},
+	typography: {
+		fontFamily: 'Inter, sans-serif', // Set the font family
+	},
+	components: {
+		MuiButton: {
+			styleOverrides: {
+				contained: {
+					border: '2px solid rgb(97, 234, 213)',
+					color: 'rgb(97, 234, 213)',
+				},
+				outlined: {
+					borderColor: 'rgb(97, 234, 213)',
+					color: 'rgb(97, 234, 213)',
+				},
+			},
+		},
 	},
 });
 
@@ -17,19 +37,12 @@ function App() {
 		<>
 			<ThemeProvider theme={darkTheme}>
 				<CssBaseline />
-				<Grid
-					container
-					sx={{
-						height: '100vh',
-						backgroundColor: '#0C1224',
-					}}>
-					<Grid item xs={6}>
-						<LeftSide />
-					</Grid>
-					<Grid item xs={6}>
-						<RightSide />
-					</Grid>
-				</Grid>
+				<Router>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/projects' element={<ProjectsPage />} />
+					</Routes>
+				</Router>
 			</ThemeProvider>
 		</>
 	);
