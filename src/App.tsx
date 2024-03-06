@@ -3,7 +3,7 @@ import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
+import Home from './components/Home';
 import ProjectsPage from './ProjectsPage';
 
 const darkTheme = createTheme({

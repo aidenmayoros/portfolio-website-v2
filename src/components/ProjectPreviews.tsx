@@ -1,10 +1,12 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 function ProjectPreviews() {
 	return (
-		<Box>
-			<h1>Project Previews</h1>
-			<a>View Full Project Archive</a>
+		<Box sx={{ mt: 5 }}>
+			<Typography variant='h4' color={'white'}>
+				Projects
+			</Typography>
+			<Typography>View Full Project Archive</Typography>
 		</Box>
 	);
 }
