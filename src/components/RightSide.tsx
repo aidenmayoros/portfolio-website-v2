@@ -3,7 +3,6 @@ import { Grid, Box } from '@mui/material';
 import About from '../About';
 import ProjectPreviews from './ProjectPreviews';
 import ContactForm from './ContactForm';
-import Skills from './Skills';
 
 function RightSide() {
 	return (
@@ -15,7 +14,6 @@ function RightSide() {
 				<Box>
 					<Box id='about' className='section' sx={{ pt: 15 }}>
 						<About />
-						<Skills />
 					</Box>
 					<Box id='projects' className='section'>
 						<ProjectPreviews />

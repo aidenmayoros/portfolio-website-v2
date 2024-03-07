@@ -1,6 +1,7 @@
 // About.tsx
 import { Element } from 'react-scroll';
 import { Typography, Box } from '@mui/material';
+import Skills from './components/Skills';
 
 function About() {
 	return (
@@ -22,6 +23,9 @@ function About() {
 				<Typography sx={{ fontSize: '16px' }}>
 					My focus now is to continuously upgrade my skills and understanding.
 				</Typography>
+				<Box sx={{ mt: 5 }}>
+					<Skills />
+				</Box>
 			</Box>
 		</Element>
 	);
