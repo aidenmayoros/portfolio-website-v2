@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
 import JavascriptIcon from '../assets/skills-icons/javascript.svg';
 import TypeScript from '../assets/skills-icons/typescript.svg';
 import React from '../assets/skills-icons/react.svg';
@@ -16,7 +15,7 @@ import MongoDB from '../assets/skills-icons/mongodb.svg';
 import Postman from '../assets/skills-icons/postman.svg';
 
 const skillsList = [
-	{ skillName: 'javascript', image: JavascriptIcon },
+	{ skillName: 'Javascript', image: JavascriptIcon },
 	{ skillName: 'TypeScript', image: TypeScript },
 	{ skillName: 'React', image: React },
 	{ skillName: 'Node.Js', image: NodeJs },
@@ -34,28 +33,31 @@ const skillsList = [
 
 function Skills() {
 	return (
-		<Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-			{skillsList.map((skill) => (
-				<Box
-					key={skill.skillName}
-					sx={{
-						backgroundColor: '#2dd4bfcf',
-						padding: '20px',
-						borderRadius: '8px',
-						margin: '10px',
-						display: 'flex',
-						flexDirection: 'column',
-						alignItems: 'center',
-						justifyContent: 'center',
-					}}>
-					<img src={skill.image} alt={skill.skillName} width={50} />
-					<Typography
-						variant='body1'
-						sx={{ marginTop: '10px', color: 'black' }}>
-						{skill.skillName}
-					</Typography>
-				</Box>
-			))}
+		<Box>
+			<Typography variant='h4' color={'white'}>
+				Skills
+			</Typography>
+			<Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+				{skillsList.map((skill) => (
+					<Box
+						key={skill.skillName}
+						sx={{
+							backgroundColor: '#2dd4bfcf',
+							p: 1,
+							borderRadius: '8px',
+							margin: '10px',
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+							justifyContent: 'center',
+						}}>
+						<img src={skill.image} alt={skill.skillName} width={30} />
+						<Typography sx={{ marginTop: '10px', color: 'black' }}>
+							{skill.skillName}
+						</Typography>
+					</Box>
+				))}
+			</Box>
 		</Box>
 	);
 }
