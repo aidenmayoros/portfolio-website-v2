@@ -33,28 +33,30 @@ const skillsList = [
 
 function Skills() {
 	return (
-		<Box sx={{ pt: 10 }}>
+		<Box display={'flex'} flexDirection={'column'} gap={2}>
 			<Typography variant='h4' color={'white'}>
 				Skills
 			</Typography>
-			<Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+			<Box
+				sx={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					gap: '16px',
+				}}>
 				{skillsList.map((skill) => (
 					<Box
 						key={skill.skillName}
 						sx={{
 							backgroundColor: '#2dd4bfcf',
 							p: 1,
-							borderRadius: '8px',
-							margin: '10px',
 							display: 'flex',
-							flexDirection: 'column',
 							alignItems: 'center',
 							justifyContent: 'center',
+							borderRadius: '4px',
+							gap: '8px',
 						}}>
 						<img src={skill.image} alt={skill.skillName} width={30} />
-						<Typography sx={{ marginTop: '10px', color: 'black' }}>
-							{skill.skillName}
-						</Typography>
+						<Typography sx={{ color: 'black' }}>{skill.skillName}</Typography>
 					</Box>
 				))}
 			</Box>

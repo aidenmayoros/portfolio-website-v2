@@ -1,15 +1,25 @@
 import { Box, Typography, Button, Chip } from '@mui/material';
 import uniqid from 'uniqid';
 import projects from '../projects';
-console.log(projects);
+import { useNavigate } from 'react-router-dom';
 
 function ProjectPreviews() {
+	const navigate = useNavigate();
+
+	const handleViewProjects = () => {
+		navigate('/projects');
+	};
+
 	return (
-		<Box sx={{ mt: 5, pt: 10 }}>
+		<Box sx={{ mt: 5 }}>
 			<Typography variant='h4' color={'white'}>
 				Projects
 			</Typography>
-			<Button variant='text' color='primary' sx={{ ml: '-6px' }}>
+			<Button
+				variant='text'
+				color='primary'
+				sx={{ ml: '-6px' }}
+				onClick={handleViewProjects}>
 				View Full Project Archive
 			</Button>
 
@@ -35,7 +45,7 @@ function ProjectPreviews() {
 									transition: 'background-color 0.3s ease', // Add transition for background-color
 								},
 							}}>
-							<Box width={125} height={65}>
+							<Box>
 								<img
 									src={project.img}
 									alt={project.projectName}
@@ -43,24 +53,28 @@ function ProjectPreviews() {
 									height={65}
 								/>
 							</Box>
-							<Box>
-								<Typography color={'white'}>{project.projectName}</Typography>
-								<Typography color={'white'} fontSize={15}>
-									{project.smallDescription}
-								</Typography>
-								{project.technologiesUsed.map((projectName: string) => (
-									<Chip
-										key={uniqid()}
-										label={projectName}
-										variant='outlined'
-										sx={{
-											backgroundColor: '#2dd4bf1a',
-											color: 'rgb(97, 234, 213)',
-											marginRight: '8px',
-											marginBottom: '8px',
-										}}
-									/>
-								))}
+							<Box display={'flex'} flexDirection={'column'} gap={2}>
+								<Box>
+									<Typography variant='h6' color={'white'}>
+										{project.projectName}
+									</Typography>
+									<Typography color={'white'} fontSize={15}>
+										{project.smallDescription}
+									</Typography>
+								</Box>
+								<Box display={'flex'} flexWrap={'wrap'} gap={1.5}>
+									{project.technologiesUsed.map((projectName: string) => (
+										<Chip
+											key={uniqid()}
+											label={projectName}
+											variant='outlined'
+											sx={{
+												backgroundColor: '#2dd4bf1a',
+												color: 'rgb(97, 234, 213)',
+											}}
+										/>
+									))}
+								</Box>
 							</Box>
 						</Box>
 					</a>

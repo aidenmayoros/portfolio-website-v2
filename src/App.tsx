@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import ProjectsPage from './ProjectsPage';
+import ProjectsArchive from './ProjectsArchive';
 
 const darkTheme = createTheme({
 	palette: {
@@ -40,7 +40,7 @@ function App() {
 				<Router>
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/projects' element={<ProjectsPage />} />
+						<Route path='/projects' element={<ProjectsArchive />} />
 					</Routes>
 				</Router>
 			</ThemeProvider>
