@@ -1,6 +1,8 @@
 const projects = [
 	{
 		projectName: 'MyFlix Movie App',
+		smallDescription:
+			'React CRUD app which allows users to signup, login, browse movies and save some to a favorites list.',
 		img: '/images/myflix-preview.png',
 		pathLink: '/myflix',
 		challenges:
@@ -20,53 +22,82 @@ const projects = [
 		],
 		appLink: 'https://aidens-myflix-api.herokuapp.com/login',
 	},
-	// {
-	// 	projectName: 'myFlix Angular Client',
-	// 	img: '/images/myFlix-angular-client-preview.png',
-	// 	pathLink: '/myflix_angular_client',
-	// 	challenges:
-	// 		'This project was one of the hardest challenges I have faced in a long time. I first learned React and thought that Angular would be similar and I might be able to learn it with ease due to that but I was very wrong. Angular just felt so different and difficult to me. I understand its a framework and so it has similar features to React like Components and keeping sections of your app on their own and then rendering them together. To get this project working and learn the basics of Angular I had to invest a lot more time in reading the docs and learning from others on youtube explaining things in different ways. By the end of the project I started to understand it better but to get it more fully I would need to invest a lot more time into it I feel.',
-	// 	knowledgeLearned:
-	// 		'Learned the basics of Angular applications like; using Modules to organize the application, using Components as the building blocks of the app; using Directives to allow manipulation of the DOM and using dependency injection making it easy to manage and provide dependencies to the components.',
-	// 	technologiesUsed: 'Angular | Angular Material UI | TypeDoc | Jsdoc',
-	// 	appLink: 'https://aidenmayoros.github.io/myFlix-Angular-client/',
-	// },
-	// {
-	// 	projectName: 'Meet App',
-	// 	img: '/images/Meet-app-preview.png',
-	// 	pathLink: '/meet_app',
-	// 	challenges:
-	// 		'My biggest challenge with creating this project was learning how to use Test Driven Development and learning how to code tests. Learning how to code tests before writing any project code was very different for me and hard to grasp my head around at first. Knowing how you want your application to work before writing code I now see is very important. I also had a challenge with learning serverless functions with AWS Lambda. Having AWS perform as my server is very convenient and nice to use once set up. There is a learning curve for serverless functions or cloud computing but I hope to get better at it moving forward.',
-	// 	knowledgeLearned:
-	// 		"I learned through creating this project what is involved in writing tests for applications using a Test Driven Development technique or TDD. This involved learning how to write and use Reacts testing library to be able to write and use tests for React. I have learned the importance of writing and having tests for your applications and having the different types of tests involved (Unit, Integration and End to End tests). Next was learning how to use AWS Lambda functions to have a serverless backend. Through this method I was able to have AWS be my apps backend and make the server easy to use. I know I have a lot to learn about AWS or serverless technologies but this was a great start at becoming introduced into it. Next was learning Object Oriented Programming techniques. I learned how React used to be written with Class components and how that's different from how we use functional components and how functional components better fit into how Javascript operates. To finish it off I learned about Progressive Web Apps and how they compare and differ from regular web apps and native apps. I then learned how to implement progressive functionality into my built app so it could be used offline. ",
-	// 	technologiesUsed:
-	// 		'React | Async Await | AWS Lambda functions | React Testing Library | Google API | OAuth2 authentication',
-	// 	appLink: 'https://aidenmayoros.github.io/meet/',
-	// },
-	// {
-	// 	projectName: 'Chat App',
-	// 	img: '/images/Chat-app-preview.png',
-	// 	pathLink: '/chat_app',
-	// 	challenges:
-	// 		"This being my first native app, this was a challenge learning how they are different from web apps. Using React Native did make it easier as I already know React but still it was different due to having different native methods and functionality. Project used Google's Firebase as well for storage which was a little difficult to implement and learn. Overall learning Google's Firebase was probably the hardest part of this project.",
-	// 	knowledgeLearned:
-	// 		'I learned through creating this project what is involved at a high level in creating native apps. I did really enjoy doing it and think that native development is really fascinating and interesting. I learned that you can write native apps with native specific languages like Swift and Java or in languages that transpile over to code that will work on both IOS and Android devices like React Native.',
-	// 	technologiesUsed:
-	// 		'React Native| Async Await | Expo| React Testing Library | Google Firestore DB | Google Firebase Authentication | AsyncStorage caching for offline use | Firebase Cloud Storage (for storing images) | Expo ImagePicker & MediaLibrary for communication features',
-	// 	appLink: 'https://github.com/aidenmayoros/Chat-App',
-	// },
-	// {
-	// 	projectName: 'Pokedex',
-	// 	img: '/images/pokedex-preview.png',
-	// 	pathLink: '/pokedex',
-	// 	challenges:
-	// 		'My challenge with this app was learning how to create from scratch a functional but custom modal. The goal was to create a modal from vanilla Javascript but I wanted to be more creative and create a modal that looks like a pokedex. I was able to create and get the modal working pretty easily but then making it work with the custom css for the pokedex look was the harder task. I would say the result was worth the challenge to make it work. ',
-	// 	knowledgeLearned:
-	// 		'I learned through this project how to better work with DOM manipulation and vanilla Javascript. It taught me how Javascript works to manipulate web pages in a way that we take for granted. Knowing how Javascript is able to create and fill HTML elements in the DOM is crucial to understanding how front end libraries and frameworks use this logic to create components for ease of use. ',
-	// 	technologiesUsed:
-	// 		'Javascript | HTML | CSS | jquery | IIFE (Immediately Invoked Function Expression) | API',
-	// 	appLink: 'https://aidenmayoros.github.io/Pok-dex/',
-	// },
+	{
+		projectName: 'MyFlix Angular Client',
+		smallDescription:
+			'Angular CRUD app which allows users to signup, login, browse movies and save some to a favorites list',
+		img: '/images/myFlix-angular-client-preview.png',
+		pathLink: '/myflix_angular_client',
+		challenges:
+			'This project was one of the hardest challenges I have faced in a long time. I first learned React and thought that Angular would be similar and I might be able to learn it with ease due to that but I was very wrong. Angular just felt so different and difficult to me. I understand its a framework and so it has similar features to React like Components and keeping sections of your app on their own and then rendering them together. To get this project working and learn the basics of Angular I had to invest a lot more time in reading the docs and learning from others on youtube explaining things in different ways. By the end of the project I started to understand it better but to get it more fully I would need to invest a lot more time into it I feel.',
+		knowledgeLearned:
+			'Learned the basics of Angular applications like; using Modules to organize the application, using Components as the building blocks of the app; using Directives to allow manipulation of the DOM and using dependency injection making it easy to manage and provide dependencies to the components.',
+		technologiesUsed: [
+			'Angular',
+			'Angular Material UI',
+			'Mongo',
+			'TypeDoc',
+			'Jsdoc',
+			'Express',
+			'Node',
+			'Mongoose',
+			'JWT tokens',
+		],
+		appLink: 'https://aidenmayoros.github.io/myFlix-Angular-client/',
+	},
+	{
+		projectName: 'Meet App',
+		smallDescription:
+			'App to search and find local events and built to learn TDD.',
+		img: '/images/Meet-app-preview.png',
+		pathLink: '/meet_app',
+		challenges:
+			'My biggest challenge with creating this project was learning how to use Test Driven Development and learning how to code tests. Learning how to code tests before writing any project code was very different for me and hard to grasp my head around at first. Knowing how you want your application to work before writing code I now see is very important. I also had a challenge with learning serverless functions with AWS Lambda. Having AWS perform as my server is very convenient and nice to use once set up. There is a learning curve for serverless functions or cloud computing but I hope to get better at it moving forward.',
+		knowledgeLearned:
+			"I learned through creating this project what is involved in writing tests for applications using a Test Driven Development technique or TDD. This involved learning how to write and use Reacts testing library to be able to write and use tests for React. I have learned the importance of writing and having tests for your applications and having the different types of tests involved (Unit, Integration and End to End tests). Next was learning how to use AWS Lambda functions to have a serverless backend. Through this method I was able to have AWS be my apps backend and make the server easy to use. I know I have a lot to learn about AWS or serverless technologies but this was a great start at becoming introduced into it. Next was learning Object Oriented Programming techniques. I learned how React used to be written with Class components and how that's different from how we use functional components and how functional components better fit into how Javascript operates. To finish it off I learned about Progressive Web Apps and how they compare and differ from regular web apps and native apps. I then learned how to implement progressive functionality into my built app so it could be used offline. ",
+		technologiesUsed: [
+			'React',
+			'Async Await',
+			'AWS Lambda',
+			'React Testing Library',
+			'Google API',
+			'OAuth2 authentication',
+		],
+		appLink: 'https://aidenmayoros.github.io/meet/',
+	},
+	{
+		projectName: 'Chat App',
+		smallDescription:
+			'Simple chat app to learn and use React Native for native development.',
+		img: '/images/Chat-app-preview.png',
+		pathLink: '/chat_app',
+		challenges:
+			"This being my first native app, this was a challenge learning how they are different from web apps. Using React Native did make it easier as I already know React but still it was different due to having different native methods and functionality. Project used Google's Firebase as well for storage which was a little difficult to implement and learn. Overall learning Google's Firebase was probably the hardest part of this project.",
+		knowledgeLearned:
+			'I learned through creating this project what is involved at a high level in creating native apps. I did really enjoy doing it and think that native development is really fascinating and interesting. I learned that you can write native apps with native specific languages like Swift and Java or in languages that transpile over to code that will work on both IOS and Android devices like React Native.',
+		technologiesUsed: [
+			'React Native',
+			'Expo',
+			'Google Firestore DB',
+			'Google Firebase Authentication',
+			'Firebase Cloud Storage',
+			'AsyncStorage caching',
+			'Expo ImagePicker',
+		],
+		appLink: 'https://github.com/aidenmayoros/Chat-App',
+	},
+	{
+		projectName: 'Pokedex',
+		smallDescription: 'Pokemon app to view and search for Pokemon data',
+		img: '/images/pokedex-preview.png',
+		pathLink: '/pokedex',
+		challenges:
+			'My challenge with this app was learning how to create from scratch a functional but custom modal. The goal was to create a modal from vanilla Javascript but I wanted to be more creative and create a modal that looks like a pokedex. I was able to create and get the modal working pretty easily but then making it work with the custom css for the pokedex look was the harder task. I would say the result was worth the challenge to make it work. ',
+		knowledgeLearned:
+			'I learned through this project how to better work with DOM manipulation and vanilla Javascript. It taught me how Javascript works to manipulate web pages in a way that we take for granted. Knowing how Javascript is able to create and fill HTML elements in the DOM is crucial to understanding how front end libraries and frameworks use this logic to create components for ease of use. ',
+		technologiesUsed: ['Javascript', 'HTML', 'CSS', 'jquery', 'IIFE', 'API'],
+		appLink: 'https://aidenmayoros.github.io/Pok-dex/',
+	},
 	// {
 	// 	projectName: 'React Expense Tracker',
 	// 	img: '/images/expense-tracker-preview.png',

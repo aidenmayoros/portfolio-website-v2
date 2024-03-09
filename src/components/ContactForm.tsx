@@ -11,7 +11,7 @@ function ContactForm() {
 
 	return (
 		<Box sx={{ maxWidth: '80%', pt: 5, pb: 5 }}>
-			<Typography variant='h5' gutterBottom sx={{ pt: 60, pb: 1 }}>
+			<Typography variant='h5' gutterBottom sx={{ pt: 10, pb: 1 }}>
 				Contact
 			</Typography>
 			<FormControl>

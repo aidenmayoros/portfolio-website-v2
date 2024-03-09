@@ -33,7 +33,7 @@ const skillsList = [
 
 function Skills() {
 	return (
-		<Box>
+		<Box sx={{ pt: 10 }}>
 			<Typography variant='h4' color={'white'}>
 				Skills
 			</Typography>
