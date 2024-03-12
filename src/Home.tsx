@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
-import RightSide from './RightSide';
-import LeftSide from './LeftSide';
-import '../App.css';
+import RightSide from './components/RightSide';
+import LeftSide from './components/LeftSide';
+import './App.css';
 
 function Home() {
 	return (

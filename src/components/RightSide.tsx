@@ -1,6 +1,5 @@
-// RightSide.tsx
 import { Grid, Box } from '@mui/material';
-import About from '../About';
+import About from './About';
 import ProjectPreviews from './ProjectPreviews';
 import ContactForm from './ContactForm';
 

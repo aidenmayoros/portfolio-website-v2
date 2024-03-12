@@ -1,7 +1,6 @@
-// About.tsx
 import { Element } from 'react-scroll';
 import { Typography, Box } from '@mui/material';
-import Skills from './components/Skills';
+import Skills from './Skills';
 
 function About() {
 	return (

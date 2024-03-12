@@ -1,4 +1,3 @@
-// Navbar.tsx
 import { Button, Box } from '@mui/material';
 
 function Navbar() {
