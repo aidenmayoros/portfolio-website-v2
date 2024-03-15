@@ -9,11 +9,11 @@ function Navbar() {
 	};
 
 	return (
-		<Box className='navbar' sx={{ display: 'flex', flexDirection: 'column' }}>
+		<Box className='navbar' display={'flex'} flexDirection={'column'} pt={3}>
 			<Button
 				variant='outlined'
 				onClick={() => scrollToSection('about')}
-				sx={{ mt: 8, width: '150px' }}>
+				sx={{ width: '150px' }}>
 				About
 			</Button>
 			<Button

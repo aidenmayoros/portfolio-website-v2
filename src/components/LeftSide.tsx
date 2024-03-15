@@ -1,3 +1,4 @@
+// LeftSide.jsx
 import { Typography, Box, IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -6,35 +7,30 @@ import Navbar from './Navbar';
 
 function LeftSide() {
 	return (
-		<Box
-			id='background-image'
-			sx={{
-				height: '100vh',
-				pt: 3,
-				pb: 20,
-				pl: 10,
-				pr: 10,
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'space-between',
-			}}>
-			<Box sx={{ pt: 15, color: 'white' }}>
-				<Typography variant='h4'>Aiden Mayoros</Typography>
-				<Typography variant='subtitle1'>Full Stack Web Developer</Typography>
-				<Navbar />
+		<Box id='background-image' pl={4}>
+			<Box display={'flex'} flexDirection={'column'} color={'white'} pt={5}>
+				<Typography variant='h4' fontWeight={600}>
+					Aiden Mayoros
+				</Typography>
+				<Typography variant='subtitle1' fontWeight={600}>
+					Full Stack Web Developer
+				</Typography>
+				<Box sx={{ display: { xs: 'none', md: 'block' } }}>
+					<Navbar />
+				</Box>
 			</Box>
-			<Box sx={{ mt: 'auto' }}>
-				{/* Social media links */}
-				<IconButton>
-					<GitHubIcon />
-				</IconButton>
-				<IconButton>
-					<LinkedInIcon />
-				</IconButton>
-				{/* Portfolio download link */}
-				<IconButton>
-					<AssignmentInd />
-				</IconButton>
+			<Box pt={5}>
+				<Box display={'flex'}>
+					<IconButton>
+						<GitHubIcon />
+					</IconButton>
+					<IconButton>
+						<LinkedInIcon />
+					</IconButton>
+					<IconButton>
+						<AssignmentInd />
+					</IconButton>
+				</Box>
 			</Box>
 		</Box>
 	);

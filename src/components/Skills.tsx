@@ -37,12 +37,7 @@ function Skills() {
 			<Typography variant='h4' color={'white'}>
 				Skills
 			</Typography>
-			<Box
-				sx={{
-					display: 'flex',
-					flexWrap: 'wrap',
-					gap: '16px',
-				}}>
+			<Box display={'flex'} flexWrap={'wrap'} gap={'16px'}>
 				{skillsList.map((skill) => (
 					<Box
 						key={skill.skillName}

@@ -5,7 +5,7 @@ import Skills from './Skills';
 function About() {
 	return (
 		<Element name='about'>
-			<Box sx={{ maxWidth: '80%' }}>
+			<Box pl={4}>
 				<Typography sx={{ fontSize: '16px' }}>
 					Back in 2019, I found a desire and passion for coding. I really
 					enjoyed being able to solve complex problems and build something
