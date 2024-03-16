@@ -11,7 +11,7 @@ function ProjectPreviews() {
 	};
 
 	return (
-		<Box sx={{ mt: 5 }}>
+		<Box pl={3} pt={12}>
 			<Typography variant='h4' color={'white'}>
 				Projects
 			</Typography>
@@ -36,7 +36,7 @@ function ProjectPreviews() {
 							p={2}
 							sx={{
 								display: 'flex',
-								maxWidth: '90%',
+								flexDirection: { xs: 'column' },
 								gap: '16px',
 								borderRadius: '8px',
 								'&:hover': {
@@ -45,12 +45,12 @@ function ProjectPreviews() {
 									transition: 'background-color 0.3s ease', // Add transition for background-color
 								},
 							}}>
-							<Box>
+							<Box display={'flex'} sx={{ justifyContent: { xs: 'center' } }}>
 								<img
 									src={project.img}
 									alt={project.projectName}
-									width={100}
-									height={65}
+									width={200}
+									height={165}
 								/>
 							</Box>
 							<Box display={'flex'} flexDirection={'column'} gap={2}>
