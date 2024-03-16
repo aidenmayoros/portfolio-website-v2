@@ -27,7 +27,12 @@ function ContactForm() {
 	};
 
 	return (
-		<Box sx={{ maxWidth: '80%', pt: 5, pb: 5 }}>
+		<Box
+			display={'flex'}
+			flexDirection={'column'}
+			ml={'auto'}
+			mr={'auto'}
+			sx={{ maxWidth: '80%', pt: 4, pb: 4 }}>
 			<Typography
 				variant='h4'
 				color={'white'}

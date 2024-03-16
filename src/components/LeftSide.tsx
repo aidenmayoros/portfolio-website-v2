@@ -21,13 +21,13 @@ function LeftSide() {
 			</Box>
 			<Box pt={5}>
 				<Box display={'flex'}>
-					<IconButton>
+					<IconButton href='https://github.com/aidenmayoros'>
 						<GitHubIcon />
 					</IconButton>
-					<IconButton>
+					<IconButton href='https://www.linkedin.com/in/aiden-mayoros/'>
 						<LinkedInIcon />
 					</IconButton>
-					<IconButton>
+					<IconButton href='/AidenResume.pdf' download>
 						<AssignmentInd />
 					</IconButton>
 				</Box>
