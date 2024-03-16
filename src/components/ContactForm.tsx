@@ -50,6 +50,7 @@ function ContactForm() {
 								id='name'
 								label='Name'
 								name='name'
+								size='small'
 							/>
 						</Grid>
 						<Grid item xs={12} sm={6}>
@@ -60,6 +61,7 @@ function ContactForm() {
 								label='Email'
 								name='email'
 								type='email'
+								size='small'
 							/>
 						</Grid>
 						<Grid item xs={12}>

@@ -21,6 +21,7 @@ const projects = [
 			'Axios',
 		],
 		appLink: 'https://aidens-myflix-api.herokuapp.com/login',
+		year: '2023',
 	},
 	{
 		projectName: 'MyFlix Angular Client',
@@ -44,6 +45,7 @@ const projects = [
 			'JWT tokens',
 		],
 		appLink: 'https://aidenmayoros.github.io/myFlix-Angular-client/',
+		year: '2023',
 	},
 	{
 		projectName: 'Meet App',
@@ -64,6 +66,7 @@ const projects = [
 			'OAuth2 authentication',
 		],
 		appLink: 'https://aidenmayoros.github.io/meet/',
+		year: '2023',
 	},
 	{
 		projectName: 'Chat App',
@@ -85,6 +88,7 @@ const projects = [
 			'Expo ImagePicker',
 		],
 		appLink: 'https://github.com/aidenmayoros/Chat-App',
+		year: '2023',
 	},
 	{
 		projectName: 'Pokedex',
@@ -97,40 +101,44 @@ const projects = [
 			'I learned through this project how to better work with DOM manipulation and vanilla Javascript. It taught me how Javascript works to manipulate web pages in a way that we take for granted. Knowing how Javascript is able to create and fill HTML elements in the DOM is crucial to understanding how front end libraries and frameworks use this logic to create components for ease of use. ',
 		technologiesUsed: ['Javascript', 'HTML', 'CSS', 'jquery', 'IIFE', 'API'],
 		appLink: 'https://aidenmayoros.github.io/Pok-dex/',
+		year: '2023',
 	},
-	// {
-	// 	projectName: 'React Expense Tracker',
-	// 	img: '/images/expense-tracker-preview.png',
-	// 	pathLink: '/expense_tracker',
-	// 	challenges:
-	// 		'This was a larger project that took me some time to complete. It involved a log in, register and forgot password page with validation. Then inside the app I used an API to generate some fake data every time it loads. It was created and styled with Material UI framework for easier to use components. Putting together all I know of frameworks and React to make this project was difficult but rewarding.',
-	// 	knowledgeLearned:
-	// 		'Learned to better use frameworks such as Material UI and to read the documentation of how it is set up and works when my componenets are not working as expected. I learned how to put a full APP together with validation, multiple pages and components and how they all fit and work together.',
-	// 	technologiesUsed: 'React | React Router | Material UI',
-	// 	appLink: '/expense_tracker/app',
-	// },
-	// {
-	// 	projectName: 'Weather Forecast API',
-	// 	img: '/images/weather-forecast-preview.png',
-	// 	pathLink: '/weather_forecast',
-	// 	challenges:
-	// 		"With this project it was challenging to get the API working since I was fairly new to asynchronous Javascript. I used OpenWeatherMap's free Weather API and had to spend a good amount of time looking through the documentation to figure out specifically how it works. Once I sifted through documentation, I eventually got it working.",
-	// 	knowledgeLearned:
-	// 		'The main thing I learned from this project is how important documentation is to read & understand. In this project I also learned how to use the built-in javascript map prototype method to create & return an array of components, each representing a weather day of the week.',
-	// 	technologiesUsed: 'React | Bootstrap | OpenWeatherMap API',
-	// 	appLink: '/weather_forecast/app',
-	// },
-	// {
-	// 	projectName: 'Simple Calculator',
-	// 	img: '/images/calculator-preview.png',
-	// 	pathLink: '/calculator',
-	// 	challenges:
-	// 		"Prior to this project, I had created a basic Mortgage Calculator, but this time I decided to take on the challenge to create something similar with React. A big challenge to this project was learning about React's component lifecycle and how components re-render on state change. I ran into many errors and infinite render loops which eventually led to a better understandin of React component lifecycles. I also learned a lot about passing down props to components and how that entire lifecycle works as well.",
-	// 	knowledgeLearned:
-	// 		'I learned how to structure components in a project and organize them all in a larger project. Learned how to use state more and passing state down to other components as props. This project helped me a lot put all the pieces of React together into a project and really see the benefits of using React and state over just querying the DOM directly with vanilla Javascript.',
-	// 	technologiesUsed: 'React',
-	// 	appLink: '/calculator/app',
-	// },
+	{
+		projectName: 'React Expense Tracker',
+		img: '/images/expense-tracker-preview.png',
+		pathLink: '/expense_tracker',
+		challenges:
+			'This was a larger project that took me some time to complete. It involved a log in, register and forgot password page with validation. Then inside the app I used an API to generate some fake data every time it loads. It was created and styled with Material UI framework for easier to use components. Putting together all I know of frameworks and React to make this project was difficult but rewarding.',
+		knowledgeLearned:
+			'Learned to better use frameworks such as Material UI and to read the documentation of how it is set up and works when my componenets are not working as expected. I learned how to put a full APP together with validation, multiple pages and components and how they all fit and work together.',
+		technologiesUsed: ['React', 'React Router', 'Material UI'],
+		appLink: '/expense_tracker/app',
+		year: '2023',
+	},
+	{
+		projectName: 'Weather Forecast API',
+		img: '/images/weather-forecast-preview.png',
+		pathLink: '/weather_forecast',
+		challenges:
+			"With this project it was challenging to get the API working since I was fairly new to asynchronous Javascript. I used OpenWeatherMap's free Weather API and had to spend a good amount of time looking through the documentation to figure out specifically how it works. Once I sifted through documentation, I eventually got it working.",
+		knowledgeLearned:
+			'The main thing I learned from this project is how important documentation is to read & understand. In this project I also learned how to use the built-in javascript map prototype method to create & return an array of components, each representing a weather day of the week.',
+		technologiesUsed: ['React', 'Bootstrap', 'OpenWeatherMap API', ''],
+		appLink: '/weather_forecast/app',
+		year: '2022',
+	},
+	{
+		projectName: 'Simple Calculator',
+		img: '/images/calculator-preview.png',
+		pathLink: '/calculator',
+		challenges:
+			"Prior to this project, I had created a basic Mortgage Calculator, but this time I decided to take on the challenge to create something similar with React. A big challenge to this project was learning about React's component lifecycle and how components re-render on state change. I ran into many errors and infinite render loops which eventually led to a better understandin of React component lifecycles. I also learned a lot about passing down props to components and how that entire lifecycle works as well.",
+		knowledgeLearned:
+			'I learned how to structure components in a project and organize them all in a larger project. Learned how to use state more and passing state down to other components as props. This project helped me a lot put all the pieces of React together into a project and really see the benefits of using React and state over just querying the DOM directly with vanilla Javascript.',
+		technologiesUsed: ['React'],
+		appLink: '/calculator/app',
+		year: '2022',
+	},
 ];
 
 export default projects;

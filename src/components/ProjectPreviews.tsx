@@ -15,16 +15,9 @@ function ProjectPreviews() {
 			<Typography variant='h4' color={'white'}>
 				Projects
 			</Typography>
-			<Button
-				variant='text'
-				color='primary'
-				sx={{ ml: '-6px' }}
-				onClick={handleViewProjects}>
-				View Full Project Archive
-			</Button>
 
 			<Box display={'flex'} flexDirection={'column'} mt={4}>
-				{projects.map((project) => (
+				{projects.slice(0, 5).map((project) => (
 					<a
 						href={project.appLink}
 						key={uniqid()}
@@ -80,6 +73,13 @@ function ProjectPreviews() {
 					</a>
 				))}
 			</Box>
+			<Button
+				variant='outlined'
+				color='primary'
+				onClick={handleViewProjects}
+				sx={{ ml: 2 }}>
+				View Full Project Archive
+			</Button>
 		</Box>
 	);
 }
