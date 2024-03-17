@@ -11,12 +11,12 @@ function ProjectPreviews() {
 	};
 
 	return (
-		<Box pl={3} pt={12}>
+		<Box pt={12} pr={4} pl={4}>
 			<Typography variant='h4' color={'white'}>
 				Projects
 			</Typography>
 
-			<Box display={'flex'} flexDirection={'column'} mt={4}>
+			<Box display={'flex'} flexDirection={'column'} mt={4} gap={2}>
 				{projects.slice(0, 5).map((project) => (
 					<a
 						href={project.appLink}
@@ -29,21 +29,21 @@ function ProjectPreviews() {
 							p={2}
 							sx={{
 								display: 'flex',
-								flexDirection: { xs: 'column' },
-								gap: '16px',
+								flexDirection: { xs: 'column', lg: 'row' },
+								gap: '1em',
 								borderRadius: '8px',
 								'&:hover': {
 									backgroundColor: '#2dd4bf1a',
 									cursor: 'pointer',
-									transition: 'background-color 0.3s ease', // Add transition for background-color
+									transition: 'background-color 0.3s ease',
 								},
 							}}>
-							<Box display={'flex'} sx={{ justifyContent: { xs: 'center' } }}>
+							<Box display={'flex'}>
 								<img
 									src={project.img}
 									alt={project.projectName}
-									width={200}
-									height={165}
+									width={180}
+									height={145}
 								/>
 							</Box>
 							<Box display={'flex'} flexDirection={'column'} gap={2}>

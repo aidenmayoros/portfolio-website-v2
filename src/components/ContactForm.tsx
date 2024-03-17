@@ -30,9 +30,14 @@ function ContactForm() {
 		<Box
 			display={'flex'}
 			flexDirection={'column'}
-			ml={'auto'}
-			mr={'auto'}
-			sx={{ maxWidth: '80%', pt: 4, pb: 4 }}>
+			sx={{
+				maxWidth: '80%',
+				pt: 4,
+				pb: 4,
+				pr: { lg: 4 },
+				pl: { lg: 4 },
+				m: { xs: 'auto', lg: '0' },
+			}}>
 			<Typography
 				variant='h4'
 				color={'white'}

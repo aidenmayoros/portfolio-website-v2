@@ -24,11 +24,11 @@ body {
 	background-color: #000f22 !important;
 }
 
-@media (min-width: 1000px) {
-	#background-image {
-		background-image: url('./assets/background_image.jpg');
+@media (min-width: 1250px) {
+	#home-page {
+		background-image: url('./assets/wave-haikei-4.svg');
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: center;
 	}
 }

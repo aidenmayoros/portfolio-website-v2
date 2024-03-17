@@ -13,19 +13,29 @@ function Navbar() {
 			<Button
 				variant='outlined'
 				onClick={() => scrollToSection('about')}
-				sx={{ width: '150px' }}>
+				sx={{ width: '150px', color: 'white', border: '1px solid white' }}>
 				About
 			</Button>
 			<Button
 				variant='outlined'
 				onClick={() => scrollToSection('projects')}
-				sx={{ width: '150px', mt: 2 }}>
+				sx={{
+					width: '150px',
+					mt: 2,
+					color: 'white',
+					border: '1px solid white',
+				}}>
 				Projects
 			</Button>
 			<Button
 				variant='outlined'
 				onClick={() => scrollToSection('contact')}
-				sx={{ width: '150px', mt: 2 }}>
+				sx={{
+					width: '150px',
+					mt: 2,
+					color: 'white',
+					border: '1px solid white',
+				}}>
 				Contact
 			</Button>
 		</Box>
