@@ -32,7 +32,11 @@ function LeftSide() {
 				height: { xs: 'auto', lg: '100vh' },
 				position: { xs: 'static', lg: 'fixed' },
 			}}>
-			<Box display={'flex'} flexDirection={'column'} color={'white'} pt={15}>
+			<Box
+				display={'flex'}
+				flexDirection={'column'}
+				color={'white'}
+				sx={{ pt: { xs: 10, lg: 15 } }}>
 				<Typography variant='h4' fontWeight={600}>
 					Aiden Mayoros
 				</Typography>

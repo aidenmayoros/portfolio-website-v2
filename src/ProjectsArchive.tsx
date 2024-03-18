@@ -19,19 +19,27 @@ function ProjectsArchive() {
 	};
 
 	return (
-		<Box id='projects'>
+		<Box>
 			<Box pt={4} pl={2}>
-				<IconButton sx={{ p: 0 }} onClick={() => handleBackButtonClick()}>
+				<IconButton onClick={() => handleBackButtonClick()}>
 					<ArrowBack sx={{ color: '#2dd4bfcf' }} />
 					<Typography color={'#2dd4bfcf'}>Aiden Mayoros</Typography>
 				</IconButton>
-				<Typography variant='h4' color={'white'} pt={1}>
+				<Typography
+					variant='h3'
+					color={'white'}
+					pt={1}
+					sx={{ textAlign: { xs: 'left', md: 'center' } }}>
 					All Projects
 				</Typography>
 			</Box>
 
-			<Box sx={{ p: 2 }}>
-				<Table>
+			<Box
+				display={'flex'}
+				justifyContent={'center'}
+				alignItems={'center'}
+				sx={{ p: 2 }}>
+				<Table sx={{ maxWidth: { xs: '100vw', md: '35vw', lg: '25vw' } }}>
 					<TableHead>
 						<TableRow>
 							<TableCell
@@ -40,7 +48,7 @@ function ProjectsArchive() {
 							</TableCell>
 							<TableCell
 								sx={{ color: 'white', borderBottom: '1px solid #cbd5e11a' }}>
-								Project
+								Project Link
 							</TableCell>
 						</TableRow>
 					</TableHead>
@@ -50,7 +58,10 @@ function ProjectsArchive() {
 								<TableCell sx={{ borderBottom: '1px solid #cbd5e11a' }}>
 									{project.year}
 								</TableCell>
-								<TableCell sx={{ borderBottom: '1px solid #cbd5e11a' }}>
+								<TableCell
+									sx={{
+										borderBottom: '1px solid #cbd5e11a',
+									}}>
 									<Link
 										href={project.appLink}
 										underline='hover'
