@@ -27,7 +27,7 @@ function ContactForm() {
 			.sendForm(
 				'service_uoekwwm',
 				'template_icxpp8s',
-				form.current,
+				e.target,
 				'lwK16SEhhciCv1THz'
 			)
 			.then(
