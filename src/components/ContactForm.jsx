@@ -1,18 +1,18 @@
+import React, { useRef } from 'react';
 import { useState } from 'react';
 import { Typography, Grid, TextField, Button, Box } from '@mui/material';
 import { FormControl } from '@mui/base/FormControl';
-import { useForm } from '@formspree/react';
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
+import emailjs from 'emailjs-com';
 
 function ContactForm() {
-	const [state, handleSubmit] = useForm('https://formspree.io/f/mjvnoaqn');
 	const [open, setOpen] = useState(false);
+	const [state, setState] = useState(false);
 
-	const handleClose = (
-		_event?: React.SyntheticEvent | Event,
-		reason?: string
-	) => {
+	const form = useRef();
+
+	const handleClose = (event, reason) => {
 		if (reason === 'clickaway') {
 			return;
 		}
@@ -20,10 +20,28 @@ function ContactForm() {
 		setOpen(false);
 	};
 
-	const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault(); // Prevent default form submission behavior
-		await handleSubmit(e); // Submit the form using useForm hook
-		setOpen(true);
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				'service_uoekwwm',
+				'template_icxpp8s',
+				form.current,
+				'lwK16SEhhciCv1THz'
+			)
+			.then(
+				(result) => {
+					console.log(result.text, 'Message Sent');
+					setState(true);
+					setOpen(true);
+				},
+				(error) => {
+					console.log(error.text, 'ERROR message not sent');
+					setState(false);
+					setOpen(true);
+				}
+			);
 	};
 
 	return (
@@ -46,15 +64,15 @@ function ContactForm() {
 				Contact
 			</Typography>
 			<FormControl>
-				<Box component='form' onSubmit={handleFormSubmit}>
+				<Box component='form' onSubmit={sendEmail}>
 					<Grid container spacing={2}>
 						<Grid item xs={12} sm={6}>
 							<TextField
 								required
 								fullWidth
-								id='name'
+								id='user_name'
 								label='Name'
-								name='name'
+								name='user_name'
 								size='small'
 							/>
 						</Grid>
@@ -62,9 +80,9 @@ function ContactForm() {
 							<TextField
 								required
 								fullWidth
-								id='email'
+								id='user_email'
 								label='Email'
-								name='email'
+								name='user_email'
 								type='email'
 								size='small'
 							/>
@@ -93,7 +111,7 @@ function ContactForm() {
 				autoHideDuration={4000}
 				onClose={handleClose}
 				anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
-				{state.succeeded ? (
+				{state ? (
 					<Alert onClose={handleClose} severity='success'>
 						Form submitted successfully
 					</Alert>
