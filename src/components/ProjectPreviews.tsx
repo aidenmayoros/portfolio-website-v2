@@ -77,7 +77,7 @@ function ProjectPreviews() {
 				variant='outlined'
 				color='primary'
 				onClick={handleViewProjects}
-				sx={{ ml: 2 }}>
+				sx={{ ml: 2, mt: 2 }}>
 				View Full Project Archive
 			</Button>
 		</Box>

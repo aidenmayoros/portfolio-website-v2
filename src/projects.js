@@ -48,25 +48,26 @@ const projects = [
 		year: '2023',
 	},
 	{
-		projectName: 'Meet App',
+		projectName: 'StrongMind Pizza',
 		smallDescription:
-			'App to search and find local events and built to learn TDD.',
-		img: '/images/Meet-app-preview.png',
-		pathLink: '/meet_app',
+			'FullStack CRUD app built to showcase knowledge in modern languages and frameworks for StrongMind',
+		img: '/images/strongMind-preview.png',
+		pathLink: '/strongMind',
 		challenges:
-			'My biggest challenge with creating this project was learning how to use Test Driven Development and learning how to code tests. Learning how to code tests before writing any project code was very different for me and hard to grasp my head around at first. Knowing how you want your application to work before writing code I now see is very important. I also had a challenge with learning serverless functions with AWS Lambda. Having AWS perform as my server is very convenient and nice to use once set up. There is a learning curve for serverless functions or cloud computing but I hope to get better at it moving forward.',
+			'This project had a lot of challenges. There was a tight deadline and I had to keep the quality high. It was my first full-stack app after Boot Camp, and I made some mistakes. Time was the biggest challenge because this was for an interview, so I focused and coded as much as I could for five days. Styling and functionality were tough for some features, but I managed to get them working well. Another challenge was building the backend and database after the frontend. I built the frontend first without thinking about the backend, so I had to rework a lot of it after the backend was done.',
 		knowledgeLearned:
-			"I learned through creating this project what is involved in writing tests for applications using a Test Driven Development technique or TDD. This involved learning how to write and use Reacts testing library to be able to write and use tests for React. I have learned the importance of writing and having tests for your applications and having the different types of tests involved (Unit, Integration and End to End tests). Next was learning how to use AWS Lambda functions to have a serverless backend. Through this method I was able to have AWS be my apps backend and make the server easy to use. I know I have a lot to learn about AWS or serverless technologies but this was a great start at becoming introduced into it. Next was learning Object Oriented Programming techniques. I learned how React used to be written with Class components and how that's different from how we use functional components and how functional components better fit into how Javascript operates. To finish it off I learned about Progressive Web Apps and how they compare and differ from regular web apps and native apps. I then learned how to implement progressive functionality into my built app so it could be used offline. ",
+			"I learned when making the front end I need to know how the backend will be serving the data so I won't have to refactor the frontend when connected to the backend. I also learned a lot about javascript functionality, React state, databases, deployment, testing and documentation.",
 		technologiesUsed: [
 			'React',
-			'Async Await',
-			'AWS Lambda',
-			'React Testing Library',
-			'Google API',
-			'OAuth2 authentication',
+			'Material UI',
+			'Axios',
+			'Node',
+			'Mongoose',
+			'Express',
+			'Chat GPT',
 		],
-		appLink: 'https://aidenmayoros.github.io/meet/',
-		year: '2023',
+		appLink: 'https://github.com/aidenmayoros/strongmind_challenge',
+		year: '2024',
 	},
 	{
 		projectName: 'Chat App',
@@ -104,6 +105,26 @@ const projects = [
 		year: '2023',
 	},
 	{
+		projectName: 'Meet App',
+		smallDescription:
+			'App to search and find local events and built to learn TDD.',
+		img: '/images/Meet-app-preview.png',
+		pathLink: '/meet_app',
+		challenges:
+			'My biggest challenge with creating this project was learning how to use Test Driven Development and learning how to code tests. Learning how to code tests before writing any project code was very different for me and hard to grasp my head around at first. Knowing how you want your application to work before writing code I now see is very important. I also had a challenge with learning serverless functions with AWS Lambda. Having AWS perform as my server is very convenient and nice to use once set up. There is a learning curve for serverless functions or cloud computing but I hope to get better at it moving forward.',
+		knowledgeLearned:
+			"I learned through creating this project what is involved in writing tests for applications using a Test Driven Development technique or TDD. This involved learning how to write and use Reacts testing library to be able to write and use tests for React. I have learned the importance of writing and having tests for your applications and having the different types of tests involved (Unit, Integration and End to End tests). Next was learning how to use AWS Lambda functions to have a serverless backend. Through this method I was able to have AWS be my apps backend and make the server easy to use. I know I have a lot to learn about AWS or serverless technologies but this was a great start at becoming introduced into it. Next was learning Object Oriented Programming techniques. I learned how React used to be written with Class components and how that's different from how we use functional components and how functional components better fit into how Javascript operates. To finish it off I learned about Progressive Web Apps and how they compare and differ from regular web apps and native apps. I then learned how to implement progressive functionality into my built app so it could be used offline. ",
+		technologiesUsed: [
+			'React',
+			'Async Await',
+			'AWS Lambda',
+			'React Testing Library',
+			'Google API',
+			'OAuth2 authentication',
+		],
+		appLink: 'https://aidenmayoros.github.io/meet/',
+		year: '2023',
+	},{
 		projectName: 'React Expense Tracker',
 		img: '/images/expense-tracker-preview.png',
 		pathLink: '/expense_tracker',
